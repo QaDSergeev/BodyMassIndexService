@@ -6,9 +6,8 @@ public class Main {
 
         BodyMassIndexService bodyMassIndexService = new BodyMassIndexService();
 
-        bodyMassIndexService.setHeight(177);
-        bodyMassIndexService.setWeight(76);
-        bodyMassIndexService.calculate();
-        bodyMassIndexService.printIndex();
+        float bodyMassIndex = bodyMassIndexService.calculate(76, 177);
+
+        System.out.printf("Индекс массы тела: %.2f\n", bodyMassIndex);
     }
 }
